@@ -1,0 +1,124 @@
+/* Estilo general del cuerpo del documento */
+body {
+    font-family: Arial, sans-serif;            /* Fuente general */
+    background-color: #e2efe9;                 /* Color de fondo claro */
+    color: #16c2ab;                            /* Color del texto principal */
+    margin: 0;                                 /* Sin margen exterior */
+    padding: 0;                                /* Sin relleno interior */
+    height: 100vh;                             /* Altura total de la ventana */
+    display: flex;                             /* Flexbox para centrar contenido */
+    justify-content: center;                   /* Centrar horizontalmente */
+    align-items: center;                       /* Centrar verticalmente */
+    flex-direction: column;                    /* Apilar elementos verticalmente */
+}
+ 
+/* Estilo del contenedor del formulario y teclado */
+#contenedor {
+    display: flex;                             /* Flexbox para apilar verticalmente */
+    flex-direction: column;                    /* Dirección vertical */
+    align-items: center;                       /* Centrado horizontal */
+    gap: 20px;                                 /* Espacio entre formulario y teclado */
+}
+ 
+/* Contorno del conjunto (fieldset) */
+fieldset {
+    background-color: azure;                   /* Fondo claro azulado */
+    border-radius: 10px;                       /* Bordes redondeados */
+    border: 1px solid #ccc;                    /* Borde gris claro */
+}
+ 
+/* Estilo del formulario */
+form {
+    width: 400px;                              /* Ancho fijo */
+    padding: 30px;                             /* Espacio interno */
+    background-color: #cef5e2;                 /* Fondo verde claro */
+    border: 1px solid #ccc;                    /* Borde gris claro */
+    border-radius: 10px;                       /* Bordes redondeados */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   /* Sombra suave */
+}
+ 
+/* Título del formulario */
+h3 {
+    text-align: center;                        /* Centrado horizontal */
+    color: #16c2ab;                            /* Color del texto */
+    margin-bottom: 20px;                       /* Espacio inferior */
+}
+ 
+/* Etiquetas de los inputs */
+label {
+    display: block;                            /* Mostrar en nueva línea */
+    margin-top: 10px;                          /* Espacio superior */
+    color: black;                              /* Color del texto */
+}
+ 
+/* Campos de entrada */
+input {
+    width: 100%;                               /* Ocupar todo el ancho disponible */
+    padding: 10px;                             /* Espacio interno */
+    margin-top: 5px;                           /* Separación superior respecto a la etiqueta */
+    border: 1px solid #ccc;                    /* Borde gris claro */
+    border-radius: 5px;                        /* Bordes redondeados */
+}
+ 
+/* Estilo común para los botones */
+button {
+    margin-top: 15px;                          /* Espacio superior */
+    padding: 10px;                             /* Espacio interno */
+    width: 100%;                               /* Ancho completo del contenedor */
+    border: none;                              /* Sin borde */
+    border-radius: 5px;                        /* Bordes redondeados */
+    cursor: pointer;                           /* Cursor tipo "mano" al pasar por encima */
+}
+ 
+/* Estilo especial para el botón de "Registrarse" */
+.register-button {
+    background-color: #4caf50;                 /* Verde */
+    color: white;                              /* Texto blanco */
+}
+ 
+/* Cambio de color al pasar el mouse por el botón de registrar */
+.register-button:hover {
+    background-color: #45a049;                 /* Verde más oscuro */
+}
+ 
+/* Contenedor del teclado virtual */
+#keyboard-container {
+    display: flex;                             /* Flexbox para centrar contenido */
+    justify-content: center;                   /* Centrar horizontalmente */
+    width: 100%;                               /* Ocupar todo el ancho disponible */
+}
+ 
+/* Estilo del teclado virtual */
+.keyboard {
+    display: grid;                             /* Grid para organizar teclas */
+    grid-template-columns: repeat(10, 1fr);    /* 10 columnas iguales */
+    gap: 8px;                                  /* Espacio entre teclas */
+    max-width: 420px;                          /* Ancho máximo del teclado */
+}
+ 
+/* Teclas del teclado (normales y retroceso) */
+.key, .backspace {
+    background-color: #4caf50;                 /* Verde */
+    color: white;                              /* Texto blanco */
+    padding: 10px;                             /* Tamaño de la tecla */
+    font-size: 14px;                           /* Tamaño del texto */
+    border-radius: 5px;                        /* Bordes redondeados */
+    cursor: pointer;                           /* Cursor tipo "mano" */
+    text-align: center;                        /* Centrado del texto */
+    min-width: 30px;                           /* Tamaño mínimo de ancho */
+}
+ 
+/* Estilo al pasar el mouse sobre cualquier tecla */
+.key:hover, .backspace:hover {
+    background-color: #45a049;                 /* Verde más oscuro */
+}
+ 
+/* Estilo específico para la tecla de retroceso */
+.backspace {
+    background-color: #f44336;                 /* Rojo */
+}
+ 
+/* Estilo al pasar el mouse por retroceso */
+.backspace:hover {
+    background-color: #e53935;                 /* Rojo más oscuro */
+}

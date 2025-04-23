@@ -1,0 +1,99 @@
+<!DOCTYPE html> <!-- Define el tipo de documento HTML5 -->
+<html lang="es"> <!-- Documento en idioma español -->
+<head>
+<meta charset="UTF-8" /> <!-- Codificación de caracteres -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- Vista adaptativa para móviles -->
+<title>Registro de Usuario</title> <!-- Título que aparece en la pestaña -->
+<link rel="stylesheet" href="estilo.css" /> <!-- Enlace al archivo de estilos CSS -->
+</head>
+<body>
+<fieldset> <!-- Agrupa visualmente el formulario y el teclado -->
+<div id="contenedor"> <!-- Contenedor principal del formulario -->
+ 
+            <!-- Formulario de registro -->
+<form id="FormularioRegistro">
+<h3>Registro de Usuario</h3> <!-- Título del formulario -->
+ 
+                <!-- Campo para el nombre de usuario -->
+<label for="nombre">Nombre de usuario:</label>
+<input type="text" id="nombre" name="nombre" placeholder="Nombre de usuario" required/>
+ 
+                <!-- Campo para el correo electrónico -->
+<label for="correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" placeholder="Correo electrónico" minlength="8" required />
+ 
+                <!-- Campo para la contraseña -->
+<label for="contrasena">Contraseña:</label>
+<input type="password" id="contrasena" name="contrasena" placeholder="Contraseña" minlength="8" required />
+ 
+                <!-- Botón para mostrar u ocultar contraseña -->
+<button type="button" id="mostrar-contrasena">Mostrar contraseña</button>
+ 
+                <!-- Campo para confirmar la contraseña -->
+<label for="confirmarContrasena">Confirmar contraseña:</label>
+<input type="password" id="confirmarContrasena" name="confirmarContrasena" placeholder="Confirmar contrasena" minlength="8" required />
+ 
+                <!-- Botón de registro -->
+<button type="button" id="registrarse" class="register-button">Registrarse</button>
+</form>
+</div>
+ 
+        <!-- Teclado virtual -->
+<div id="keyboard-container">
+<div class="keyboard">
+<!-- Botones del teclado virtual con letras, números y símbolos -->
+<!-- Cada botón tiene un atributo "data-char" que indica el carácter que representa -->
+<button class="key" data-char="1">1</button>
+<button class="key" data-char="2">2</button>
+<button class="key" data-char="3">3</button>
+<button class="key" data-char="4">4</button>
+<button class="key" data-char="5">5</button>
+<button class="key" data-char="6">6</button>
+<button class="key" data-char="7">7</button>
+<button class="key" data-char="8">8</button>
+<button class="key" data-char="9">9</button>
+<button class="key" data-char="0">0</button>
+ 
+                <!-- Letras -->
+<button class="key" data-char="A">A</button>
+<button class="key" data-char="B">B</button>
+<button class="key" data-char="C">C</button>
+<button class="key" data-char="D">D</button>
+<button class="key" data-char="E">E</button>
+<button class="key" data-char="F">F</button>
+<button class="key" data-char="G">G</button>
+<button class="key" data-char="H">H</button>
+<button class="key" data-char="I">I</button>
+<button class="key" data-char="J">J</button>
+<button class="key" data-char="K">K</button>
+<button class="key" data-char="L">L</button>
+<button class="key" data-char="M">M</button>
+<button class="key" data-char="N">N</button>
+<button class="key" data-char="Ñ">Ñ</button>
+<button class="key" data-char="O">O</button>
+<button class="key" data-char="P">P</button>
+<button class="key" data-char="Q">Q</button>
+<button class="key" data-char="R">R</button>
+<button class="key" data-char="S">S</button>
+<button class="key" data-char="T">T</button>
+<button class="key" data-char="U">U</button>
+<button class="key" data-char="V">V</button>
+<button class="key" data-char="W">W</button>
+<button class="key" data-char="X">X</button>
+<button class="key" data-char="Y">Y</button>
+<button class="key" data-char="Z">Z</button>
+ 
+                <!-- Símbolos -->
+<button class="key" data-char="@">@</button>
+<button class="key" data-char=".">.</button>
+ 
+                <!-- Botón de retroceso (borrar último carácter) -->
+<button class="backspace" id="retroceso">←</button>
+</div>
+</div>
+</fieldset>
+ 
+    <!-- Enlace al archivo JavaScript -->
+<script src="script.js"></script>
+</body>
+</html>
