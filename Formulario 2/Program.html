@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="es"> 
+<head>
+  <meta charset="UTF-8"> 
+  <title>Registro</title> <!-- Título que aparece en la pestaña del navegador -->
+  
+  <!-- Conectamos la hoja de estilos externa -->
+  <link rel="stylesheet" href="Estilo.css">
+
+  <!-- Al cargar la página, se muestra una alerta -->
+  <script>
+    window.onload = function() {
+      alert("¡Rellene el Formulario!");
+    };
+  </script>
+</head>
+
+<body>
+  <!-- Formulario que se envía a login.html con método POST -->
+  <form action="Login.html" method="GET">
+    <fieldset>
+    <h2>Registro de Usuario</h2> <!-- Título del formulario -->
+
+    <!-- Campo de nombre completo, obligatorio -->
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <!-- Campo de correo electrónico, debe tener formato email y es obligatorio -->
+    <label for="correo">Correo electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <!-- Campo de contraseña, mínimo 8 caracteres, obligatorio -->
+    <label for="pass">Contraseña:</label>
+    <input type="password" id="pass" name="pass" minlength="8" required>
+
+    <!-- Confirmación de la contraseña, mismo requisito -->
+    <label for="confirmar">Confirmar contraseña:</label>
+    <input type="password" id="confirmar" name="confirmar" minlength="8" required>
+
+    <!-- Fecha de nacimiento con selector de calendario, obligatorio -->
+    <label for="fecha">Fecha de nacimiento:</label>
+    <input type="date" id="fecha" name="fecha" required>
+
+    <!-- Selección de género con opciones en desplegable -->
+    <label for="genero">Género:</label>
+    <select id="genero" name="genero">
+      <option>Masculino</option>
+      <option>Femenino</option>
+      <option>Otro</option>
+    </select>
+
+    <!-- Selección de país, obligatorio -->
+    <label for="pais">País:</label>
+    <select id="pais" name="pais" required>
+      <option value="">Seleccione</option> <!-- Opción vacía para obligar a elegir -->
+      <option>España</option>
+      <option>Portugal</option>
+      <option>Francia</option>
+      <option>Alemania</option>
+      <option>Italia</option>
+    </select>
+
+    <!-- Casilla para aceptar los términos y condiciones, obligatoria -->
+    <label>
+      <input type="checkbox" required> Acepto los términos
+    </label>
+
+    <!-- Botón para enviar el formulario -->
+    <button type="submit">Enviar</button>
+</fieldset>
+  </form>
+</body>
+</html>
