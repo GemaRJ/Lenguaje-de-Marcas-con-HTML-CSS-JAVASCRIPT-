@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Formulario de Registro</title>
+<link rel="stylesheet" href="Estilo.css">
+<script>
+alert("¡¡¡ Rellene el Formulario !!!");
+</script>
+</head>
+<body>
+<div class="contenedor">
+<h1>Registro de Usuario</h1>
+<form action="login.html" method="get">
+<label for="Nombre">Nombre:</label>
+<input type="text" id="nombre" name="nombre" required>
+<label for="Correo">Correo electrónico:</label>
+<input type="email" id="correo" name="correo" required>
+<label for="Contraseña">Contraseña:</label>
+<input type="password" id="contraseña" name="contraseña" minlength="8"
+required>
+<label for="Confirmar contraseña">Confirmar contraseña:</label>
+<input type="password" id="confirmar" name="confirmar" minlength="8"
+required>
+<label for="Fecha">Fecha de nacimiento:</label>
+<input type="date" id="Fecha" name="Fecha" required>
+<label for="pais">Género:</label>
+<select id="genero" name="genero" required>
+<option value="">----Seleccione su Género---</option>
+<option value="masculino">Masculino</option>
+<option value="femenino">Femenino</option>
+<option value="otro">Otro</option>
+</select>
+<label for="Pais">País de Residencia:</label>
+<select id="pais" name="pais" required>
+<option value="">---Seleccione su país de residencia---</option>
+<option value="España">España</option>
+<option value="Portugal">Portugal</option>
+<option value="Francia">Francia</option>
+<option value="Italia">Italia</option>
+<option value="otro">Otro</option>
+</select><br><br>
+<div style="text-align: left; margin-top: 10px;">
+<input type="checkbox" id="terminos" name="terminos" required>
+<label for="terminos">Acepto los términos y condiciones</label>
+</div>
+<button type="submit">Enviar</button>
+</form>
+</div>
+</body>
+
